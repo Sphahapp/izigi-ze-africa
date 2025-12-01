@@ -1,0 +1,37 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- White Background -->
+  <rect width="1024" height="1024" fill="#FFFFFF"/>
+  
+  <!-- Africa Map -->
+  <path d="M512 200 L580 220 L620 250 L650 300 L670 360 L680 420 L675 480 L660 540 L640 600 L610 650 L570 680 L530 700 L490 710 L450 700 L410 680 L370 650 L340 600 L320 540 L310 480 L300 420 L310 360 L330 300 L360 250 L400 220 Z" 
+        fill="#8B4513" filter="url(#shadow)"/>
+  
+  <!-- Footprints -->
+  <!-- Upper footprints (golden-yellow/orange-ochre) -->
+  <g fill="#DAA520">
+    <path d="M580 280 L590 280 L595 285 L600 290 L605 295 L600 300 L595 305 L590 310 L580 310 L575 305 L570 300 L575 295 L580 290 Z" filter="url(#shadow)"/>
+    <path d="M620 320 L630 320 L635 325 L640 330 L645 335 L640 340 L635 345 L630 350 L620 350 L615 345 L610 340 L615 335 L620 330 Z" filter="url(#shadow)"/>
+  </g>
+  
+  <!-- Lower footprints (dark brown) -->
+  <g fill="#654321">
+    <path d="M420 580 L430 580 L435 585 L440 590 L445 595 L440 600 L435 605 L430 610 L420 610 L415 605 L410 600 L415 595 L420 590 Z" filter="url(#shadow)"/>
+    <path d="M480 620 L490 620 L495 625 L500 630 L505 635 L500 640 L495 645 L490 650 L480 650 L475 645 L470 640 L475 635 L480 630 Z" filter="url(#shadow)"/>
+  </g>
+  
+  <!-- Text: IZI GI -->
+  <text x="512" y="820" text-anchor="middle" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#8B4513">IZI GI</text>
+  
+  <!-- Text: ze AFRICA -->
+  <text x="512" y="880" text-anchor="middle" font-family="Arial, sans-serif" font-size="50" font-weight="bold" fill="#8B4513">ze AFRICA</text>
+  
+  <!-- Decorative zigzag pattern -->
+  <path d="M200 950 L250 900 L300 950 L350 900 L400 950 L450 900 L500 950 L550 900 L600 950 L650 900 L700 950 L750 900 L800 950 L850 900 L900 950" 
+        stroke="#8B4513" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

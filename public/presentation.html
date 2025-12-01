@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeepSeek AI Console — Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/reveal.css" />
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/theme/black.css" id="theme" />
+    <style>
+      :root { --brand: #00e5ff; --brand2: #7c3aed; }
+      .reveal { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+      .reveal h1, .reveal h2, .reveal h3 { letter-spacing: 0.2px; }
+      .brand { color: var(--brand); }
+      .subtle { color: #a0a0a0; font-weight: 400; }
+      .pill { display: inline-block; padding: 4px 10px; border-radius: 999px; background: rgba(124,58,237,.15); color: #e9d5ff; border: 1px solid rgba(124,58,237,.35); font-size: .6em; vertical-align: middle; }
+      .logo { max-height: 250px; filter: drop-shadow(0 0 16px rgba(0,229,255,.25)); }
+      .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+      .kbd { background:#222; border:1px solid #444; border-bottom-color:#333; border-radius:6px; padding:2px 6px; font-size:.9em; }
+      .muted { color:#cbd5e1; }
+      ul.tight > li { margin: .25em 0; }
+      .footnote { font-size: .55em; color:#9ca3af; margin-top: 1em; }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h2>IZIGI <span class="brand">ze AFRICA</span></h2>
+          <p class="subtle">AI Development Studio for chat, images, and generative apps</p>
+          <p class="pill">Live Demo Ready</p>
+          <p style="margin-top:20px"><img class="logo" src="/ChatGPT Image Oct 4, 2025, 07_53_38 AM.png" alt="IZIGI ze AFRICA Logo" /></p>
+          <p class="muted" style="margin-top: 14px; font-size: .9em;">Presented by <strong>Vincent Siphamandla Khumalo</strong> — Software Developer</p>
+          <aside class="notes">
+            Elevator pitch: one studio to go from prompt to polished outputs — images, edits, and live code — all in the browser.
+          </aside>
+        </section>
+
+        <section>
+          <h3>The problem</h3>
+          <ul class="tight">
+            <li>Fragmented AI workflow split across apps and steps</li>
+            <li>Manual visual edits and context switching slow teams down</li>
+            <li>Non-technical users struggle to turn ideas into shippable assets</li>
+          </ul>
+          <aside class="notes">Set up pain: switching tools, friction, and lost momentum.</aside>
+        </section>
+
+        <section>
+          <h3>The solution</h3>
+          <ul class="tight">
+            <li>One workspace: prompt → generation → editing → export</li>
+            <li>Visual-first tools that feel instant and approachable</li>
+            <li>Extensible architecture for future AI backends</li>
+          </ul>
+          <aside class="notes">Value: speed, simplicity, and privacy-forward client processing.</aside>
+        </section>
+
+        <section>
+          <h3>What's included today</h3>
+          <div class="two-col">
+            <div>
+              <ul>
+                <li><strong>Multi-Model AI Chat:</strong> GPT-4o, O3-Mini, Claude, Gemini, Llama-4</li>
+                <li><strong>Image Generation:</strong> Text-to-image via Pollinations AI</li>
+                <li><strong>Image Editor:</strong> Background removal, inpainting, crop</li>
+                <li><strong>Design Studio:</strong> Drag/resize/rotate, text, opacity, PNG export</li>
+                <li><strong>Vision Analysis:</strong> Image understanding with AI</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li><strong>Document Analysis:</strong> PDF/image Q&A with source attribution</li>
+                <li><strong>AI Builder:</strong> Prompt → live HTML/JS preview, ZIP export</li>
+                <li><strong>Smart Reminders:</strong> Natural language parsing & scheduling</li>
+                <li><strong>Status Panel:</strong> Real-time monitoring & API key manager</li>
+                <li><strong>Modern Stack:</strong> React + TypeScript + shadcn/ui</li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">Comprehensive feature list covering all major capabilities.</aside>
+        </section>
+
+        <section>
+          <h3>Key Features Deep Dive</h3>
+          <div class="two-col">
+            <div>
+              <h4>AI Intelligence</h4>
+              <ul class="tight">
+                <li>Multi-model chat with streaming responses</li>
+                <li>Vision analysis: upload or URL input</li>
+                <li>Document Q&A: PDFs & images, up to 3 files</li>
+                <li>Natural language reminder parsing</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Content Creation</h4>
+              <ul class="tight">
+                <li>Text-to-image generation</li>
+                <li>AI background replacement</li>
+                <li>Design Studio with layers</li>
+                <li>AI Builder: code generation & export</li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">Show both AI capabilities and creative tools.</aside>
+        </section>
+
+        <section>
+          <h3>Demo flow (2–3 min)</h3>
+          <ol>
+            <li>Generate an image from a descriptive prompt</li>
+            <li>Upload a photo and replace its background</li>
+            <li>Analyze a document and ask questions</li>
+            <li>Open Design Studio, place logo + text, export PNG</li>
+            <li>AI Builder: generate a landing page and export ZIP</li>
+          </ol>
+          <aside class="notes">Keep it fast; focus on the end-to-end story.</aside>
+        </section>
+
+        <section>
+          <h3>Architecture (high‑level)</h3>
+          <ul>
+            <li>React 18 + Vite + TypeScript + Tailwind + shadcn/ui</li>
+            <li>Image Gen via Pollinations (URL-based), Vision via transformers.js (WASM)</li>
+            <li>Canvas composition for masking, inpainting, and PNG export</li>
+            <li>AI Builder: streaming code into sandboxed iframe, JSZip export</li>
+          </ul>
+          <aside class="notes">Private, fast, and web-native; easy to extend with more models.</aside>
+        </section>
+
+        <section>
+          <h3>Notable engineering work</h3>
+          <ul>
+            <li>Client-only segmentation with <code>Xenova/segformer-b0</code></li>
+            <li>Clean alpha masking with thresholding for edges</li>
+            <li>Precise drag/resize/rotate with per-item opacity and export</li>
+            <li>Live code preview with background/text-style injectors</li>
+          </ul>
+          <aside class="notes">Highlight both UX polish and technical depth.</aside>
+        </section>
+
+        <section>
+          <h3>Reliability, privacy, security</h3>
+          <ul>
+            <li>Client-first processing; images stay local</li>
+            <li>CORS-aware loads with user feedback</li>
+            <li>Local API key storage; no hardcoded secrets</li>
+            <li>Graceful error handling and toasts</li>
+          </ul>
+          <aside class="notes">Addresses common deployment concerns proactively.</aside>
+        </section>
+
+        <section>
+          <h3>Business Impact & ROI</h3>
+          <div class="two-col">
+            <div>
+              <h4>Immediate Benefits</h4>
+              <ul class="tight">
+                <li>60-70% reduction in development time</li>
+                <li>40% improvement in task completion</li>
+                <li>Eliminate multiple AI service subscriptions</li>
+                <li>80% reduction in manual review time</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Use Cases</h4>
+              <ul class="tight">
+                <li>Designers/marketers: fast visuals</li>
+                <li>Founders: rapid prototyping</li>
+                <li>Teams: internal branding</li>
+                <li>Developers: code prototyping</li>
+                <li>Healthcare: document analysis</li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">Show concrete value and diverse applications.</aside>
+        </section>
+
+        <section>
+          <h3>Roadmap (near‑term)</h3>
+          <ul>
+            <li>Layer ordering, snap‑to‑grid, alignment tools</li>
+            <li>SVG import with color overrides, brand palettes</li>
+            <li>Pluggable model backends (SambaNova/OpenRouter/Stability)</li>
+            <li>Templates for landing pages and social banners</li>
+          </ul>
+          <aside class="notes">Clear evolution path that builds on current strengths.</aside>
+        </section>
+
+        <section>
+          <h3>Why me</h3>
+          <ul>
+            <li>Built end‑to‑end: product thinking, UX, and implementation</li>
+            <li>Fast iteration with maintainable TypeScript and clean UI</li>
+            <li>Bias for practical, demoable outcomes</li>
+          </ul>
+          <aside class="notes">Tie craft to the org’s hiring needs.</aside>
+        </section>
+
+        <section>
+          <h3>Platform Statistics</h3>
+          <ul>
+            <li><strong>12,000+ lines</strong> of production TypeScript code</li>
+            <li><strong>1,200+ hours</strong> of development work</li>
+            <li><strong>7 major features</strong> integrated in one platform</li>
+            <li><strong>5+ AI models</strong> supported across capabilities</li>
+            <li><strong>100% client-side</strong> processing for privacy</li>
+          </ul>
+          <p class="footnote muted">Production-ready platform built for scale and extensibility</p>
+          <aside class="notes">Show the scale and professionalism of the work.</aside>
+        </section>
+
+        <section>
+          <h2>Thank you</h2>
+          <p class="subtle">IZIGI <span class="brand">ze AFRICA</span></p>
+          <p class="muted" style="margin-top: 8px;">Vincent Siphamandla Khumalo — Software Developer</p>
+          <p class="muted" style="margin-top: 12px; font-size: 0.9em;">v.khumalo@yahoo.com | 061 079 3813</p>
+          <p class="footnote muted" style="margin-top: 20px;">Ready for live demo and Q&A</p>
+          <aside class="notes">Invite Q&A. Open the app and run the quick demo if time allows.</aside>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/reveal.js@5/dist/reveal.js"></script>
+    <script>
+      const deck = new Reveal({ hash: true, slideNumber: true });
+      deck.initialize();
+    </script>
+  </body>
+  </html>
+
+
