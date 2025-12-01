@@ -1,6 +1,6 @@
 [build]
-  # Build command
-  command = "npm run build"
+  # Install command (uses .npmrc for legacy-peer-deps)
+  command = "npm install && npm run build"
   # Directory to publish (Vite outputs to 'dist' by default)
   publish = "dist"
 
